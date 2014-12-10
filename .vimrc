@@ -9,8 +9,13 @@ set nowrap
 
 set expandtab
 set smarttab
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
 
-"map jk <esc>
+set ai "auto indent
+set si "smart indent
+
+inoremap jk <esc>
+map Y y$
 
