@@ -47,6 +47,10 @@
 	# fetch
 	f = fetch
 
+	# merge
+	m  = merge
+	mm = merge master
+
     # pull
     pr = pull --rebase
 
@@ -54,8 +58,10 @@
     pom = push origin master
 
 	# rebase
-	r   = rebase --interactive HEAD~10
+	r   = rebase
+	ri  = rebase --interactive
 	rc  = rebase --continue
+	rs  = rebase --skip
 	ra  = rebase --abort
 	rom = rebase origin master
 
