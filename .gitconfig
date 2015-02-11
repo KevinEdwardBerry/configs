@@ -24,11 +24,8 @@
   untracked = cyan
 
 [alias]
-	# Snagged from Ryan Tomayko (http://github.com/rtomayko/dotfiles)
 	# commit
-	ci = commit --verbose
-	cn = commit --verbose --amend
-	ca = commit --verbose --all
+	ca = commit --amend
 	cw = commit -m "WIP"
 	cm = commit -m
 	cc = commit -c
