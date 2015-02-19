@@ -47,6 +47,7 @@
 	# merge
 	m  = merge
 	mm = merge master
+	mt = mergetool
 
     # pull
     pr = pull --rebase
