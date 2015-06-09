@@ -6,6 +6,7 @@ catch
 endtry
 
 set nowrap
+set number
 
 set expandtab
 set smarttab
