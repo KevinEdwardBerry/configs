@@ -6,7 +6,8 @@ __git_ps1 ()
     fi
 }
 
-PS1="\W\$(__git_ps1)$ "
+#PS1="\W\$(__git_ps1)$ "
+PS1="\e[92m\W\e[96m\$(__git_ps1)\e[0m$ "
 #PS1="\h$"
 #export PS1="\W$(__git_ps1 " (%s)")$ "
 alias la='ls -al'
