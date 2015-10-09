@@ -70,7 +70,7 @@
   dt = difftool --no-prompt
 
   # status
-  s  = -p status # with pagination
+    s  = -p status # with pagination
     ss = -p status -s
 
   # log
