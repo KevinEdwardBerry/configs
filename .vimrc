@@ -1,9 +1,6 @@
 syntax enable
 
-try
-  colorscheme desert
-catch
-endtry
+colorscheme desert
 
 set nowrap  " turn off wrapping
 set number  " show line numbers
@@ -17,6 +14,13 @@ set softtabstop=2  " length of a tab in insert mode
 set ai  " auto indent  (keeps consecutive lines on same indent level)
 set si  " smart indent (indents another level on new code blocks e.g. after '{' )
 
+set ignorecase " ignore case when using all lower case
+set smartcase  " do not ingnore case when using mixed case
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Key Mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " set <leader> to space bar
 let mapleader="\<space>"
 
@@ -29,13 +33,16 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 " make Y yank like D deletes
 map Y y$
 
-" save with only two keys (instead of three)
-" using 's' for save since <leader>w is mapped to <C-w>
-map <leader>s :w<cr>
+" save with only two keys
+map <leader>w :w!<cr>
 
 " remap common Ctrl-key combos
 map <leader>r <C-r>
-map <leader>W <C-W>
-map <leader>w <C-w>
 map <leader>u <C-u>
 map <leader>d <C-d>
+
+" moving between windows
+map <leader>wj <C-W>j
+map <leader>wk <C-W>k
+map <leader>wh <C-W>h
+map <leader>wl <C-W>l
