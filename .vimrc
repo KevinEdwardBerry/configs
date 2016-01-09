@@ -17,5 +17,25 @@ set softtabstop=2  " length of a tab in insert mode
 set ai  " auto indent  (keeps consecutive lines on same indent level)
 set si  " smart indent (indents another level on new code blocks e.g. after '{' )
 
-inoremap jk <esc>  " type j and k consecutively to escape (into normal mode)
-map Y y$           " make Y yank like D deletes
+" set <leader> to space bar
+let mapleader="\<space>"
+
+" type j and k consecutively to escape (to normal mode from insert mode)
+inoremap jk <esc>
+
+" invoke any changes to this .vimrc file
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" make Y yank like D deletes
+map Y y$
+
+" save with only two keys (instead of three)
+" using 's' for save since <leader>w is mapped to <C-w>
+map <leader>s :w<cr>
+
+" remap common Ctrl-key combos
+map <leader>r <C-r>
+map <leader>W <C-W>
+map <leader>w <C-w>
+map <leader>u <C-u>
+map <leader>d <C-d>
