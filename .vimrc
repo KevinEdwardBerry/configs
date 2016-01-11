@@ -42,7 +42,7 @@ map <leader>u <C-u>
 map <leader>d <C-d>
 
 " moving between windows
-map <leader>wj <C-W>j
-map <leader>wk <C-W>k
-map <leader>wh <C-W>h
-map <leader>wl <C-W>l
+map <leader>j <C-W>j
+map <leader>k <C-W>k
+map <leader>h <C-W>h
+map <leader>l <C-W>l
