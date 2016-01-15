@@ -1,6 +1,9 @@
 syntax enable
 
-colorscheme desert
+try
+  colorscheme desert
+catch
+endtry
 
 set nowrap  " turn off wrapping
 set number  " show line numbers
@@ -40,6 +43,8 @@ map <leader>w :w!<cr>
 map <leader>r <C-r>
 map <leader>u <C-u>
 map <leader>d <C-d>
+map <leader>o <C-o>
+map <leader>i <C-i>
 
 " moving between windows
 map <leader>j <C-W>j
