@@ -2,6 +2,9 @@
   name  = KevinEdwardBerry
   email = kevin.berry@improving.com
 
+[core]
+  editor = vim  # for Linux distros that default to nano
+
 [color]
   branch = auto
   diff   = auto
@@ -42,7 +45,7 @@
   c = checkout
 
   # fetch
-  f = fetch
+  f = fetch --all --prune  # all the things
 
   # merge
   m  = merge
@@ -70,8 +73,8 @@
   dt = difftool --no-prompt
 
   # status
-    s  = -p status # with pagination
-    ss = -p status -s
+  s  = -p status # with pagination
+  ss = -p status -s
 
   # log
   l   = log --pretty=oneline --abbrev-commit
@@ -101,12 +104,12 @@
   ki = stash --keep-index
 
   # experimental
-  stage = add
+  stage   = add
   unstage = reset HEAD
-  pop = reset --soft HEAD^
-  review = log -p --max-count=1
-  rv = remote -v
-  fp = format-patch --stdout
+  pop     = reset --soft HEAD^
+  review  = log -p --max-count=1
+  rv      = remote -v
+  fp      = format-patch --stdout
 
 [achievement]
   upload = true
