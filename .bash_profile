@@ -6,13 +6,18 @@ __git_ps1 ()
     fi
 }
 
-#PS1="\W\$(__git_ps1)$ "
+# use with KevinBerry.terminal
 PS1="\e[92m\W\e[96m\$(__git_ps1)\e[0m$ "
+
+# experiment with presentation
+#PS1="\e[34m\W\e[35m\$(__git_ps1)\e[0m$ "
+
+# use to test hostname
 #PS1="\h$"
-#export PS1="\W$(__git_ps1 " (%s)")$ "
+
+# git prompt (no color)
+#PS1="\W\$(__git_ps1)$ "
+
 alias la='ls -al'
-alias gcc='gcc-4.9'
-alias g++='g++-4.9'
-alias c++='c++-4.9'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
