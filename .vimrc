@@ -4,7 +4,8 @@ syntax enable
 "-------
 try
   colorscheme desert   " normal
-  "colorscheme zellner " presentation
+  "colorscheme zellner  " presentation
+  "colorscheme blue     " powershell
 catch
 endtry
 
