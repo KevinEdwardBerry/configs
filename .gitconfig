@@ -45,9 +45,8 @@
   c = checkout
 
   # fetch
-  f   = fetch
-  fap = fetch --all --prune  # all the things
-  ft  = fetch --tags         # tags
+  f  = fetch --all --prune  # all the things
+  ft = fetch --tags         # tags
 
   # merge
   m  = merge
