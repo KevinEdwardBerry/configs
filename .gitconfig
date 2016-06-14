@@ -80,8 +80,8 @@
   ss = -p status -s
 
   # log
-  l   = log --pretty=oneline --abbrev-commit
-  ll  = log --pretty=oneline --abbrev-commit --max-count=15
+  l   = log --pretty=oneline --abbrev-commit --max-count=15
+  ll  = log --pretty=oneline --abbrev-commit
   lc  = log --stat --summary
   lg  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
