@@ -38,7 +38,9 @@
 
   # add
   a  = add
-  aa = add --update
+  aa = add --all
+  ai = add --interactive
+  au = add --update
   ap = add --patch
 
   # checkout
