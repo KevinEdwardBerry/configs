@@ -59,7 +59,8 @@
   pr = pull --rebase
 
   #push
-  pom = push origin master
+  please = push --force-with-lease
+  pom    = push origin master
 
   # rebase
   r   = rebase
