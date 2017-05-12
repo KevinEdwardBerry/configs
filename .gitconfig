@@ -80,6 +80,10 @@
   s  = -p status  # with pagination
   ss = -p status -s
 
+  # bisect
+  good = bisect good
+  bad  = bisect bad
+
   # log
   l   = log --pretty=oneline --abbrev-commit --max-count=15
   ll  = log --pretty=oneline --abbrev-commit
