@@ -34,7 +34,8 @@
   cc = commit -c
 
   # branch
-  b = branch
+  b     = branch
+  unset = branch --unset-upstream
 
   # add
   a  = add
