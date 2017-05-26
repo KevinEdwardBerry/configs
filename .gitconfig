@@ -36,7 +36,7 @@
   # branch
   b      = branch
   unset  = branch --unset-upstream
-  recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"
+  recent = for-each-ref --sort=-committerdate refs/heads/ --format="%(refname:short)"
 
   # add
   a  = add
