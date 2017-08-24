@@ -1,0 +1,6 @@
+VsVim
+RelativeLineNumbers
+Code Alignment
+Trailing Whitespace Visualizer
+Editor Guidelines
+HideMainMenu[2017]
