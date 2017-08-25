@@ -3,4 +3,5 @@ RelativeLineNumbers
 Code Alignment
 Trailing Whitespace Visualizer
 Editor Guidelines
+NUnit 3 Test Adapter
 HideMainMenu[2017]
