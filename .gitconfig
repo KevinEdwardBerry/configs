@@ -29,7 +29,6 @@
 [alias]
   # commit
   ca = commit --amend
-  cw = commit -m "WIP"
   cm = commit -m
   cc = commit -c
 
