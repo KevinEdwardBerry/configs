@@ -40,6 +40,7 @@
 
   # add
   a  = add
+  an = add --no-all  # old add behavior
   aa = add --all
   ai = add --interactive
   au = add --update
