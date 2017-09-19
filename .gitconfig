@@ -108,9 +108,6 @@
   timesheetAllPretty = reflog --pretty=format:'%Cgreen(%cd) %Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold blue) [%an]%Creset' --abbrev-commit --date-order --date=local
   tsap = reflog --pretty=format:'%Cgreen(%cd) %Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold blue) [%an]%Creset' --abbrev-commit --date-order --date=local
 
-  # clean
-  prune = fetch --prune
-
   # misc
   pi = cherry-pick
   ki = stash --keep-index
