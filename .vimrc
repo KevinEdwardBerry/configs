@@ -4,7 +4,7 @@ syntax enable
 "-------
 try
   colorscheme desert   " normal
-  "colorscheme zellner  " presentation
+  "colorscheme evening  " presentation
   "colorscheme blue     " powershell
   "colorscheme pablo    " possibly better powershell/poshgit color
 catch
