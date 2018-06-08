@@ -37,6 +37,7 @@
   unset      = branch --unset-upstream
   recent     = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)%09%(committerdate:short)"
   recent-all = for-each-ref --sort=-committerdate refs/heads/ --format="%(refname:short)%09%(committerdate:short)"
+  bprune     = !git branch --merged | egrep -v '(^\\*|master|develop)' | xargs git branch -d
 
   # add
   a  = add
