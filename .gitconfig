@@ -55,10 +55,11 @@
   cc = commit -c
 
   # diff
-  d  = diff
-  p  = diff --cached  # mnemonic: "patch"
-  ds = diff --stat    # mnemonic: "diff stat"
-  dt = difftool --no-prompt
+  d   = diff
+  p   = diff --cached   # mnemonic: "patch"
+  dni = diff --no-index
+  ds  = diff --stat     # mnemonic: "diff stat"
+  dt  = difftool --no-prompt
 
   # fetch
   f  = fetch --all --prune  # all the things
