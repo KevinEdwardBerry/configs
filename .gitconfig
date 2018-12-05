@@ -3,7 +3,8 @@
   email = kevin.berry@improving.com
 
 [core]
-  editor = vim  # for Linux distros that default to nano
+  editor       = vim  # for Linux distros that default to nano
+  excludefiles = ~/.gitignore
 
 [color]
   branch = auto
