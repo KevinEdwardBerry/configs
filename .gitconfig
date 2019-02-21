@@ -78,6 +78,8 @@
   mm = merge master
   ff = merge --ff-only
   mt = mergetool
+  mc = merge --continue
+  ma = merge --abort
 
   # pull
   pr = pull --rebase
