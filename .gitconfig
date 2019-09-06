@@ -140,9 +140,6 @@
 [achievement]
   upload = true
 
-[credential]
-  helper = !'C:\\Users\\Kevin\\AppData\\Roaming\\GitCredStore\\git-credential-winstore.exe'
-
 [push]
   default = simple
 
