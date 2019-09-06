@@ -1,6 +1,14 @@
 [user]
-  name  = KevinEdwardBerry
-  email = kevin.berry@improving.com
+  name       = KevinEdwardBerry
+  email      = kevin.berry@improving.com
+  signingkey = F534149EECF1634E
+
+[commit]
+  gpgsign = true
+
+[gpg]
+  # Help Windows find the program
+  # program = "C:/Program Files (x86)/GnuPG/bin/gpg.exe"
 
 [core]
   editor       = vim  # for Linux distros that default to nano
