@@ -13,6 +13,8 @@
 [core]
   editor       = vim  # for Linux distros that default to nano
   excludefiles = ~/.gitignore
+  # Uncomment for Windows environment
+  # autocrlf   = true
 
 [color]
   branch = auto
