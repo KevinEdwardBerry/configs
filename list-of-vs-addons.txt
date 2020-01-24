@@ -5,3 +5,4 @@ Trailing Whitespace Visualizer
 Editor Guidelines
 NUnit 3 Test Adapter
 HideMainMenu[2017]
+#Regions Are Evil
