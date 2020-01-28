@@ -110,6 +110,9 @@
   s  = -p status  # with pagination
   ss = -p status -s
 
+  # tag
+  t = tag --sort -version:refname
+
   # timesheet (from Cori Drew)
   timesheet = reflog --pretty=format:'(%cd) %h - %d %s [%an]' --abbrev-commit --date-order --date=local --author=KevinEdwardBerry
   ts = reflog --pretty=format:'(%cd) %h - %d %s [%an]' --abbrev-commit --date-order --date=local --author=KevinEdwardBerry
