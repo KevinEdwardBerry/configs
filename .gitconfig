@@ -104,6 +104,7 @@
   rc  = rebase --continue
   rs  = rebase --skip
   ra  = rebase --abort
+  ro  = rebase --onto
   rom = rebase origin master
 
   # status
