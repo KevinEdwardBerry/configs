@@ -3,7 +3,7 @@ syntax enable
 " colors
 "-------
 try
-  colorscheme desert   " normal
+  colorscheme torte    " normal
   "colorscheme evening  " presentation
   "colorscheme blue     " powershell
   "colorscheme pablo    " possibly better powershell/poshgit color
@@ -18,14 +18,14 @@ set laststatus=2   " always show status line
 
 set expandtab      " tabs == spaces
 set smarttab       " backspace shiftwidth on tabs (and other smart things)
-set shiftwidth=4   " length of a shift (>> and << in normal mode)
-set tabstop=4      " length of a tab
-set softtabstop=4  " length of a tab in insert mode
+set shiftwidth=2   " length of a shift (>> and << in normal mode)
+set tabstop=8      " length of a tab
+set softtabstop=8  " length of a tab in insert mode
 set splitbelow     " open splits below the current
 set splitright     " open vsplits to right of current
 
 set ai  " auto indent  (keeps consecutive lines on same indent level)
-set si  " smart indent (indents another level on new code blocks e.g. after '{' )
+set si  " smart indent (indents another level on new code blocks e.g. after '{')
 
 set ignorecase " ignore case when using all lower case
 set smartcase  " do not ingnore case when using mixed case
