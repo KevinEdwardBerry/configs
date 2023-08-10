@@ -1,3 +1,42 @@
+" Auto-install plug.vim
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Plugins
+call plug#begin()
+Plug 'junegunn/vader.vim'
+call plug#end()
+
+" Exercism easy testing
+function! s:exercism_tests()
+  if expand('%:e') == 'vim'
+    let testfile = printf('%s/%s.vader', expand('%:p:h'),
+          \ tr(expand('%:p:h:t'), '-', '_'))
+    if !filereadable(testfile)
+      echoerr 'File does not exist: '. testfile
+      return
+    endif
+    source %
+    execute 'Vader' testfile
+  else
+    let sourcefile = printf('%s/%s.vim', expand('%:p:h'),
+          \ tr(expand('%:p:h:t'), '-', '_'))
+    if !filereadable(sourcefile)
+      echoerr 'File does not exist: '. sourcefile
+      return
+    endif
+    execute 'source' sourcefile
+    Vader
+  endif
+endfunction
+
+autocmd BufRead *.{vader,vim}
+      \ command! -buffer Test call s:exercism_tests()
+
+" Normal configuration settings
 syntax enable
 
 " colors
@@ -29,6 +68,13 @@ set si  " smart indent (indents another level on new code blocks e.g. after '{')
 
 set ignorecase " ignore case when using all lower case
 set smartcase  " do not ingnore case when using mixed case
+
+" File types with four space indention instead of two
+autocmd FileType cs     setlocal shiftwidth=4
+autocmd FileType fsharp setlocal shiftwidth=4
+autocmd FileType ps1    setlocal shiftwidth=4
+autocmd FileType rust   setlocal shiftwidth=4
+autocmd FileType sql    setlocal shiftwidth=4
 
 "----------------------------------------------------------
 " Key Mappings
