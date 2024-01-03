@@ -75,6 +75,7 @@ autocmd FileType fsharp setlocal shiftwidth=4
 autocmd FileType ps1    setlocal shiftwidth=4
 autocmd FileType rust   setlocal shiftwidth=4
 autocmd FileType sql    setlocal shiftwidth=4
+autocmd FileType java   setlocal shiftwidth=4
 
 "----------------------------------------------------------
 " Key Mappings
