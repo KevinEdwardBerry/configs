@@ -37,6 +37,7 @@ autocmd BufRead *.{vader,vim}
       \ command! -buffer Test call s:exercism_tests()
 
 " Normal configuration settings
+autocmd FileType * set formatoptions-=ro
 syntax enable
 
 " colors
