@@ -113,6 +113,9 @@
   ro  = rebase --onto
   rom = rebase origin master
 
+  # remote
+  rv = remote -v
+
   # status
   s  = -p status  # with pagination
   ss = -p status -s
@@ -137,14 +140,12 @@
 
   # misc
   pi = cherry-pick
-  ki = stash --keep-index
 
   # experimental
   stage   = add
   unstage = reset HEAD
   pop     = reset --soft HEAD^
   review  = log -p --max-count=1
-  rv      = remote -v
   fp      = format-patch --stdout
 
 [achievement]
