@@ -60,6 +60,12 @@
   # checkout
   c = checkout
 
+  # cherry-pick
+  cp  = cherry-pick
+  cpc = cherry-pick --continue
+  cps = cherry-pick --skip
+  cpa = cherry-pick --abort
+
   # commit
   ca = commit --amend
   cm = commit -m
